@@ -1,8 +1,6 @@
 'use client'
-import { useState } from 'react';
 
 const Home = () => {
-  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
     <div className="flex flex-col md:flex-row">

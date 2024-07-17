@@ -1,32 +1,41 @@
 'use client'
+import Curo from "./Components/Curo";
+import Footer from  "./Components/Footer";
+import SocialIcons from "./Components/SocialIcons";
 
 const Home = () => {
-
   return (
-    <div className="flex flex-col md:flex-row">
-      {/* Left Column */}
-      <div style={{ backgroundColor: '#F7F3E9' }} className="w-full md:w-1/2 h-screen flex items-center justify-start pt-10 px-6 md:px-16">
-        <div className="text-left">
-          <h1 style={{ color: '#3E2723' }} className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Discover Your Signature Scent
-          </h1>
-          <p style={{ color: '#36454F' }} className="text-lg md:text-2xl leading-relaxed mb-8">
-            Indulge in our exclusive collection of captivating fragrances
-          </p>
-          <button
-            style={{ backgroundColor: '#3E2723' }}
-            className="text-white text-lg md:text-xl font-semibold py-3 px-8 rounded-md shadow-md transition duration-300 transform hover:scale-105 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
-          >
-            Explore
-          </button>
+    <>
+      <div className="flex flex-col md:flex-row">
+        {/* Left Column */}
+        <div
+          className="w-full h-screen flex items-center justify-start pt-10 px-6 md:px-16 bg-cover bg-center"
+          style={{ backgroundImage: 'url(./b4full.png)', zIndex: '-1' }}
+        >
+          <div className="text-left">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 text-[#3E2723]">
+              Discover Your <br />Signature Scent
+            </h1>
+            <p className="text-lg md:text-2xl leading-relaxed mb-8 text-black">
+              Indulge in our exclusive collection of <br /> captivating fragrances
+            </p>
+
+            <button
+              className="cursor-pointer font-semibold text-lg md:text-xl py-3 px-6 rounded-lg shadow-lg bg-[#F5F5DC] text-[#8B4513] hover:bg-[#8B4513] hover:text-[#F5F5DC] transition duration-300 ease-in-out"
+            >
+              Explore
+            </button>
+          </div>
         </div>
       </div>
+     
+        {/* <Curo/> */}
+        <SocialIcons/>
 
-      {/* Right Column */}
-      <div  style={{ backgroundColor: '#F7F3E9' }} className="w-full md:w-1/2 h-screen bg-green-900 flex items-center justify-center pt-0 px-0 md:px-0">
-      <img className='w-[]500px h-[500px]' src="https://i.pinimg.com/564x/1d/64/7e/1d647e898e538634379366ef24f572ce.jpg" alt="" />
-      </div>
-    </div>
+
+    
+      <Footer/>
+    </>
   );
 };
 

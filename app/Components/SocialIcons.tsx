@@ -1,18 +1,14 @@
 'use client'
 
-import React, { useEffect } from 'react';
-// import AOS from "aos";
-// import 'aos/dist/aos.css';
+
 
 const SocialIcons = () => {
-    // useEffect(() => {
-    //     AOS.init(); // Initialize AOS when component mounts
-    //   }, []);
+
      
   return (
     <>
 
-    <div className="flex flex-col md:flex-row justify-between items-center w-full min-h-auto bg-[#F7F3E9] px-4 py-8 md:px-16 md:py-14">
+    <div className="flex flex-col md:flex-row justify-between items-center w-full min-h-auto bg-[#FAF4E6] px-4 py-8 md:px-16 md:py-14">
 
       {/* Fragrances Card */}
       <div className="flex rounded-xl flex-col w-full sm:w-96 mx-auto mb-8 md:mb-0 bg-[#ffffff] text-gray-700 shadow-md transition-transform duration-500 hover:scale-105">
@@ -74,9 +70,39 @@ const SocialIcons = () => {
         </div>
       </div>
     </div>
-    
 
-    <div className='flex w-full min-h-[500px] bg-[#F7F3E9] pt-14 pb-14 justify-center'>
+
+    <div className='w-full h-96 flex'>
+
+{/* Men Card */}
+<div className='relative flex w-1/2 h-96'>
+  <div className='relative w-full h-full overflow-hidden'>
+    <div
+      style={{ backgroundImage: `url('https://i.pinimg.com/736x/2f/da/4b/2fda4bb2f061b21b541d5bcd2304ce62.jpg')` }}
+      className='w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-105'
+    ></div>
+  </div>
+  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 flex justify-right items-center">
+    <h3 className="text-white text-lg font-bold font-serif">Men</h3>
+  </div>
+</div>
+
+{/* Women Card */}
+<div className='relative flex w-1/2 h-96'>
+  <div className='relative w-full h-full overflow-hidden'>
+    <div
+      style={{ backgroundImage: `url('https://perfumania.com/cdn/shop/articles/Best_Versace_Perfumes_for_Women_in_2024.webp?v=1715884495')` }}
+      className='w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-105'
+    ></div>
+  </div>
+  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 flex justify-right items-center">
+    <h3 className="text-white text-lg font-bold font-serif">Women</h3>
+  </div>
+</div>
+
+</div>
+
+    <div className='flex w-full min-h-[500px] bg-[#F7F3E9]   justify-center'>
   <div style={{ position: 'relative', maxWidth: '100%' }}>
     <video src="./jazavid.mp4" className='w-full h-auto' autoPlay muted loop />
   </div>

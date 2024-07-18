@@ -41,24 +41,23 @@ const Navbar = () => {
             <Link href="/" legacyBehavior>
               <a className="py-4 px-2 text-gray-800 border-b-4 border-gray-800 font-semibold" style={{ color: '#3E2723' }}>HOME</a>
             </Link>
-            <Link href="/about" legacyBehavior >
+            <Link href="/About" legacyBehavior >
               <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>ABOUT</a>
             </Link>
-            <Link href="/products" legacyBehavior>
+            <Link href="/Store" legacyBehavior>
               <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>PRODUCTS</a>
             </Link>
-            <Link href="/contact" legacyBehavior>
+            <Link href="/Contact" legacyBehavior>
               <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>CONTACT</a>
             </Link>
-            <Link href="/categories" legacyBehavior>
+            <Link href="/Contact" legacyBehavior>
               <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>CATEGORIES</a>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-9 mr-5">
             <FontAwesomeIcon icon={faHeart} className="text-gray-600 hover:text-orange-950  cursor-pointer" />
             <FontAwesomeIcon icon={faShoppingCart} className="text-gray-600 hover:text-orange-950 cursor-pointer" />
-            <Link href="/Login" legacyBehavior>
-           <FontAwesomeIcon icon={faUser} className="text-gray-600 hover:text-green-800 cursor-pointer" /></Link>
+            <Link href="/Login"><FontAwesomeIcon icon={faUser} className="text-gray-600 hover:text-green-800 cursor-pointer" /></Link>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -99,7 +98,7 @@ const Navbar = () => {
         <div className="flex items-center justify-around py-4">
           <FontAwesomeIcon icon={faHeart} className="text-gray-600 hover:text-green-800 cursor-pointer" />
           <FontAwesomeIcon icon={faShoppingCart} className="text-gray-600 hover:text-green-800 cursor-pointer" />
-          <Link href="/Login" legacyBehavior>
+          <Link href="/Login">
            <FontAwesomeIcon icon={faUser} className="text-gray-600 hover:text-green-800 cursor-pointer" /> 
             </Link>
         </div>
